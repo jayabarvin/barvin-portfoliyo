@@ -6,7 +6,7 @@ import css from '../../Assets/lang_icon/CSS__supports-removebg-preview.png';
 import js from '../../Assets/lang_icon/_JavaScript_Hex_sticker__Sticker_for_Sale_by_Stick_Erify-removebg-preview.png';
 import bootstrap from '../../Assets/lang_icon/Bootstrap_Logo_Programming_Sticker_by_workNquote-removebg-preview.png';
 import mysql from '../../Assets/lang_icon/SQL_Basics___Hands-On_Beginner_SQL_Tutorial_Analyzing_Bike-Sharing-removebg-preview.png';
-import php from '../../Assets/lang_icon/Php_Logo_Sticker___Php-removebg-preview.png';
+// import php from '../../Assets/lang_icon/Php_Logo_Sticker___Php-removebg-preview.png';
 import reacts from '../../Assets/lang_icon/Developer_Stickers_for_Sale__1_-removebg-preview.png';
 import node from '../../Assets/lang_icon/NodeJS_logo-removebg-preview.png';
 
@@ -41,7 +41,7 @@ function Skills(){
                     <div className="skill-right">  
                         {/* <div style={{width:"170%",marginLeft:"20px"}}>  */}
                         <div className="skill-level level_five"><img width={60} height={65} src={reacts} alt="" /><hr className="hr_five" />90%</div>
-                        <div className="skill-level level_six"><img width={65} height={65} src={php} alt="" /><hr className="hr_six" />80%</div>
+                        {/* <div className="skill-level level_six"><img width={65} height={65} src={php} alt="" /><hr className="hr_six" />80%</div> */}
                         <div className="skill-level level_seven"><img width={60} height={60} src={mysql} alt="" /><hr className="hr_seven" />95%</div>
                         <div className="skill-level level_eight"><img width={60} height={60} src={node} alt="" /><hr className="hr_eight" />40%</div>
                         {/* </div> */}

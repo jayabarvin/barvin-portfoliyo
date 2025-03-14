@@ -1,10 +1,11 @@
-import React ,{useRef} from "react";
+import React ,{useRef,useState} from "react";
 import './Contact.css';
 import head_bg from '../../Assets/Background/Meet_your_Posher__Claire-removebg-preview-removebg-preview.png';
 import mail_icon from '../../Assets/Icons/icons8-mail-40.png';
 import location_icon from '../../Assets/Icons/icons8-location-50.png';
 import contact_icon from '../../Assets/Icons/icons8-call-50 (1).png';
 import linkedin_icon from '../../Assets/Icons/icons8-linked-in-50.png';
+import {  toast } from 'react-toastify';
 
 
 
@@ -12,9 +13,9 @@ import linkedin_icon from '../../Assets/Icons/icons8-linked-in-50.png';
 function Contact(){
 
 
-    // const [Namesa,setNamesa]=useState("")
-    // const [Namesb,setNamesb]=useState("")
-    // const [Namesc,setNamesc]=useState("")
+    const [name,SetName]=useState("")
+    const [email,SetEmail]=useState("")
+    const [textArea,SetTextArea]=useState("")
 
 
 
@@ -26,7 +27,8 @@ function Contact(){
 
     const onSubmit = async (event) => {
         event.preventDefault();
-        const formData = new FormData(event.target);
+        try {
+            const formData = new FormData(event.target);
     
         formData.append("access_key", "a4dd2462-6374-4732-a100-09b027aa08ff");
     
@@ -44,9 +46,15 @@ function Contact(){
     
         if (res.success) {
             submitsRef.current.innerHTML=`Submitted`
-            
+            toast.success("Submitted Successfully")
         }
-      };
+        } catch (error) {
+            console.log(error)
+        }
+        SetName("")
+        SetEmail("")
+        SetTextArea("")
+    }
 
     //   console.log(inputRef)
 
@@ -90,11 +98,11 @@ function Contact(){
                 </div>
                 <form onSubmit={onSubmit} className="contact-right">
                     <label htmlFor="">Your Name</label>
-                    <input   type="text" placeholder="Enter your Name" name="name" required/>
+                    <input onChange={(e)=>SetName(e.target.value)} value={name}  type="text" placeholder="Enter your Name" name="name" required/>
                     <label htmlFor="">Email</label>
-                    <input  type="text" placeholder="Enter your mail id" name="email" required/>
+                    <input onChange={(e)=>SetEmail(e.target.value)} value={email}  type="text" placeholder="Enter your mail id" name="email" required/>
                     <label htmlFor="">Write Any Message</label>
-                    <textarea   name="message" placeholder="Enter Your Message" required/>
+                    <textarea onChange={(e)=>SetTextArea(e.target.value)} value={textArea}   name="message" placeholder="Enter Your Message" required/>
                     <button  type="submit" ref={submitsRef} className="contact-submit"> Submit Now  </button>
                 </form>
             </div>
