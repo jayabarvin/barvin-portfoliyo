@@ -1,0 +1,280 @@
+.skills{
+    height: 100vh;
+    width: 100%;
+    /* margin: 0px 70px; */
+    /* background-color: aqua; */
+}
+.skill-head{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.skill-head h1{
+    padding-top: 50px;
+    text-align: center;
+    color: black;
+}
+.skill-image-div{
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+}
+.skill-head img{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    z-index: -1;
+    /* left: 570px; */
+    bottom: -55px;
+}
+
+.my-skills{
+    width:100%;
+    /* background-color: #b415ff; */
+}
+.skill-cover{
+    /* margin: 25px 50px ; */
+    /* background-color: blueviolet; */
+    display: flex;
+
+}
+.skill-level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    gap: 30px;
+
+}
+.skill-level hr{
+    height: 20px;
+    outline: none;
+    border: 2px solid whitesmoke;
+    /* border-radius: 10px; */
+    background-image: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    transition: 0.3s;
+}
+/* .level_one{
+    
+}
+.level_two{
+
+}
+.level_three{
+
+}
+.level_four{
+
+}
+.level_five{
+
+}
+.level_six{
+
+}
+.level_seven{
+
+}
+.level_{
+
+} */
+.hr_one{
+    width: 75%;
+    position: relative;
+}
+.hr_one::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06141B;
+    animation: showRightone 2s ease forwards;
+    animation-delay: 1s;
+}
+.hr_two{
+    width: 75%;
+    position: relative;
+}
+.hr_two::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06141B;
+    animation: showRighttwo 2s ease forwards;
+    animation-delay: 1s;
+}
+.hr_three{
+    width: 75%;
+    position: relative;
+}
+.hr_three::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06141B;
+    animation: showRightthree 2s ease forwards;
+    animation-delay: 1s;
+}
+.hr_four{
+    width: 75%;
+    position: relative;
+}
+.hr_four::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06141B;
+    animation: showRightfour 2s ease forwards;
+    animation-delay: 1s;
+}
+.hr_five{
+    width: 75%;
+    position: relative;
+}
+.hr_five::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06141B;
+    animation: showRightfive 2s ease forwards;
+    animation-delay: 1s;
+}
+.hr_six{
+    width: 75%;
+    position: relative;
+}
+.hr_six::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06141B;
+    animation: showRightsix 2s ease forwards;
+    animation-delay: 1s;
+}
+.hr_seven{
+    width: 75%;
+    position: relative;
+}
+.hr_seven::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06141B;
+    animation: showRightseven 2s ease forwards;
+    animation-delay: 1s;
+}
+.hr_eight{
+    width: 75%;
+    position: relative;
+}
+.hr_eight::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06141B;
+    animation: showRighteight 2s ease forwards;
+    animation-delay: 1s;
+}
+.skill-left{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 50%;
+    /* flex: 1; */
+    /* margin: 20px 20px; */
+    padding: 50px 20px;
+    /* background-color: red; */
+   
+}
+.skill-left div{
+    margin-top: 40px;
+}
+.skill-right div{
+    margin-top: 40px;
+}
+.skill-right{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+   width: 50%;
+   /* flex: 1; */
+    padding: 50px 20px;
+    /* background-color: blue; */
+    /* padding-left: 50px; */
+}
+.skill-level:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #b415ff;
+}
+/* .skill-level hr:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+} */
+
+@keyframes showRightone{
+    100%{
+        width: 3%;
+    }
+}
+@keyframes showRighttwo{
+    100%{
+        width: 13%;
+    }
+}
+@keyframes showRightthree{
+    100%{
+        width: 8%;
+    }
+}
+@keyframes showRightfour{
+    100%{
+        width: 15%;
+    }
+}
+@keyframes showRightfive{
+    100%{
+        width: 10%;
+    }
+}
+@keyframes showRightsix{
+    100%{
+        width: 20%;
+    }
+}
+@keyframes showRightseven{
+    100%{
+        width: 5%;
+    }
+}
+@keyframes showRighteight{
+    100%{
+        width: 45%;
+    }
+}
