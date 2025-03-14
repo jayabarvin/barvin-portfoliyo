@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/barvin-portfoliyo/static/css/main.53ca8cc7.css",
-    "main.js": "/barvin-portfoliyo/static/js/main.3959c674.js",
+    "main.js": "/barvin-portfoliyo/static/js/main.8bd9cef1.js",
     "static/js/453.ed3810f9.chunk.js": "/barvin-portfoliyo/static/js/453.ed3810f9.chunk.js",
     "static/media/Untitled design.png": "/barvin-portfoliyo/static/media/Untitled design.f93be5dac1bee832dc3d.png",
     "static/media/1714040621235-01.jpeg": "/barvin-portfoliyo/static/media/1714040621235-01.907969d81e385bc4e520.jpeg",
@@ -18,11 +18,11 @@
     "static/media/CSS__supports-removebg-preview.png": "/barvin-portfoliyo/static/media/CSS__supports-removebg-preview.29f76ebc5d5423c0b2e0.png",
     "index.html": "/barvin-portfoliyo/index.html",
     "main.53ca8cc7.css.map": "/barvin-portfoliyo/static/css/main.53ca8cc7.css.map",
-    "main.3959c674.js.map": "/barvin-portfoliyo/static/js/main.3959c674.js.map",
+    "main.8bd9cef1.js.map": "/barvin-portfoliyo/static/js/main.8bd9cef1.js.map",
     "453.ed3810f9.chunk.js.map": "/barvin-portfoliyo/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53ca8cc7.css",
-    "static/js/main.3959c674.js"
+    "static/js/main.8bd9cef1.js"
   ]
 }
